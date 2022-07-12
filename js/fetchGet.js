@@ -44,3 +44,6 @@ async function getId(event) {
 let getUser = document.getElementById("btn1");
 
 getUser.addEventListener("click", get);
+
+
+let teste = 9
