@@ -1,5 +1,4 @@
 let ul = document.querySelector("ul");
-//let btn1 = document.querySelector("btn1");
 let input = document.querySelector("input");
 let butGet = document.querySelector("#butGet")
 
@@ -21,28 +20,27 @@ async function get(event) {
                         <li><span id="nome1">Nome: ${result[i].name}<span></li>
                         <li><span id="idDieta1">ID da dieta: ${result[i].id_dieta}<span></li>
                         <li><span id="idade1">Idade: ${result[i].idade}<span></li>
-                        <a href="./userGot.html"><button id="butGet">Ver</button></a>
+                        <button onclick="return getId(event, ${result[i].id})" id="butGet">Ver</button>
                         </ul>`;
   }
 }
 
-async function getId(event) {
+async function getId(event, id) {
     event.preventDefault();
-  let id = document.querySelector('#id1').value  
-  const resultado = await fetch("http://localhost:2222/getUsers/" + id, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+ 
+ 
+
+  window.location.replace(`./crudUser.html?id=${id}`)
+
+  
 
 
 }
 
-//butGet.addEventListener("click", getId)
 
-let getUser = document.getElementById("btn1");
 
-getUser.addEventListener("click", get);
+ let getUser = document.getElementById("btn1");
+
+ getUser.addEventListener("click", get);
 
 

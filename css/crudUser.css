@@ -81,3 +81,11 @@ input{
 #inputUp{
     height: 20px;
 }
+
+#user{
+    margin-right: 8px;
+}
+
+#butCard{
+    border-radius: 7px;
+}
