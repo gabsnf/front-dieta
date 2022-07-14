@@ -22,6 +22,9 @@ async function get(event) {
                         <li><span id="idade1">Idade: ${result[i].idade}<span></li>
                         <button onclick="return getId(event, ${result[i].id})" id="butGet">Ver</button>
                         </ul>`;
+
+                        
+              
   }
 }
 
