@@ -21,17 +21,7 @@ function addUser(e){
 
 btn1.addEventListener('click', addUser)
 
-let btnDelete = document.getElementById('delete')
-let div = document.querySelector('.center')
 
-
-
-function deleteUser(e){
-    const user = e.target.parentNode.parentNode
-    user.removeChild(div)
-}
-
-btnDelete.addEventListener('click', deleteUser)
 
 
 
