@@ -7,11 +7,6 @@ window.onload = () => {
 }
 
 let userId1;
-let userid2;
-let userId3;
-let userId4;
-let userId5;
-
 
 console.log(window)
 
@@ -68,16 +63,18 @@ async function comparar(){
             console.log(cardapio.value)
             console.log(cardapiojson[i].name)
                 if(cardapio.value == cardapiojson[i].name){
+                    if(peso.value == cardapiojson[i].peso){
                     encontrei = true
+                    }
             }
                 
             
         }
         if(encontrei){
-            alert('sua dieta esta certa')
+            alert('Parabéns, continue assim!!!')
         }
         else{
-            alert('sua dieta ta errada')
+            alert('Se esforça mais cara')
         }
 
 
