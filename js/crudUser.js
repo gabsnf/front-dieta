@@ -66,8 +66,10 @@ async function comparar() {
           let cardapiojson = await resultado.json()
           for(let i = 0; i < cardapiojson.length; i++){
               cardapio.innerHTML += `
+              <option value=''></option>
               <option value='${cardapiojson[i].name}'>${cardapiojson[i].name}</option>`
               peso.innerHTML += `
+              <option value=''><option>
               <option value='${cardapiojson[i].peso}'>${cardapiojson[i].peso}</option>`
               console.log(cardapiojson[i])
           }
