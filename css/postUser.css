@@ -36,39 +36,43 @@ main h1{
     color: white;
 }
 
-ul:first-child{
+ul{
     display: flex;
-
-    background-color: gray;
-    margin-top: 40px;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-ul+ul{
-    display: flex;
-
-    background-color: gray;
-    margin-top: 40px;
-    border-radius: 20px;
-}
-
 
 li{
     color: white;
     display: flex;
     padding: 13px;
-    width: 180px;
-    height: 200px;
+    width: 500px;
+    height: 180px;
+    background-color: gray;
+    border-radius: 15px;
     margin-top: 20px;
-
-    /* background-color: green; */
+    margin-right: 10px;
+}
+input{
+    border-radius: 5px;
 }
 
-#btn1{
+#btn2{
     border-radius: 7px;
+    margin-top: 5px;
 }
 
-.butGet{
-    height: 50px;
-    width: 80px;
+#info{
+    background-color: gray;
+    min-height: 250px;
+    width: 250px;
     border-radius: 10px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
+
+    
+

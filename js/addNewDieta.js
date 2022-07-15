@@ -24,3 +24,5 @@ async function postCard() {
   let postMenu = document.getElementById("btn10");
   postMenu.addEventListener("click", postCard);
   
+
+  

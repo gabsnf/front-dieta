@@ -62,7 +62,7 @@ input{
     margin-top: 5px;
 }
 
-#info{
+.info{
     background-color: gray;
     min-height: 250px;
     width: 250px;

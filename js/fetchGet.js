@@ -20,7 +20,7 @@ async function get(event) {
                         <li><span id="nome1">Nome: ${result[i].name}<span></li>
                         <li><span id="idDieta1">ID da dieta: ${result[i].id_dieta}<span></li>
                         <li><span id="idade1">Idade: ${result[i].idade}<span></li>
-                        <button onclick="return getId(event, ${result[i].id})" id="butGet">Ver</button>
+                        <button onclick="return getId(event, ${result[i].id})" class="butGet">Ver</button>
                         </ul>`;
 
                         
@@ -28,7 +28,9 @@ async function get(event) {
   }
 }
 
-async function getId(event, id) {
+
+
+async function getId(event, id,) {
     event.preventDefault();
  
  
@@ -39,7 +41,6 @@ async function getId(event, id) {
 
 
 }
-
 
 
  let getUser = document.getElementById("btn1");
