@@ -20,6 +20,7 @@ async function postCard() {
     console.log(resultado);
   }
 
+  alert("Dieta criada")
 
   let postMenu = document.getElementById("btn10");
   postMenu.addEventListener("click", postCard);

@@ -1,5 +1,4 @@
-async function postUser(e) {
-    e.preventDefault()
+async function postUser() {
 
   
     const user = document.getElementById('user').value
@@ -20,7 +19,6 @@ async function postUser(e) {
     let result = await resultado.json()
     console.log(result);
   }
-
 
   let btn2 = document.getElementById('btn2')
   btn2.addEventListener("click", postUser);

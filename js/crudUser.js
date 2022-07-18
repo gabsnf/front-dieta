@@ -7,6 +7,9 @@ window.onload = () => {
 let userId1;
 let userId2;
 
+let idUser;
+let dietaUser;
+
 
 let butCard = document.getElementById("butCard");
 let cardapio = document.getElementById("inputUp");
@@ -50,6 +53,8 @@ async function comparar() {
         } else {
             alert("Se esforça mais cara");
         }
+
+        location.reload()
     }
     
     butCard.addEventListener("click", comparar);
@@ -75,6 +80,23 @@ async function comparar() {
           }
       }
 
+      async function userRef() {
+        console.log("ola")
+          const resultado = await fetch("http://localhost:2222/getuserRef", {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+      
+          let userRef = await resultado.json()
+          console.log(userRef)
+
+
+          }
+      
+
+
       async function upUser(){
         const name = document.getElementById('upUser').value
         const id_dieta = document.getElementById('upDieta').value
@@ -94,7 +116,7 @@ async function comparar() {
         let result =  await resultado.json()
         console.log(result)
 
-        
+        alert("Usuario alterado")
 
       }
 let btUpdate = document.getElementById('btUpdate')
@@ -129,7 +151,7 @@ btUpdate.addEventListener('click', upUser)
     
    
     card()
-
+    userRef()
       
     }
 
@@ -152,6 +174,10 @@ async function deleteUser(e) {
 
   const user = e.target.parentNode.parentNode;
   user.removeChild(div);
+
+  alert("Usuario deletado")
+
+  location.reload()
 }
 
 btnDelete.addEventListener("click", deleteUser);

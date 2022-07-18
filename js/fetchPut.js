@@ -1,5 +1,5 @@
-async function put(event) {
-    event.preventDefault();
+async function put() {
+
   
     const dieta = document.querySelector(`#id_dieta`).value
     const name = document.querySelector('#user').value
@@ -15,6 +15,8 @@ async function put(event) {
       },
     });
     console.log(resultado);
+
+    alert("Usuario alterado")
   }
   
   let putUser = document.getElementById("btn2");
