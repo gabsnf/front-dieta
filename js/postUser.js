@@ -18,6 +18,8 @@ async function postUser() {
     });
     let result = await resultado.json()
     console.log(result);
+
+    alert("Usuario criado")
   }
 
   let btn2 = document.getElementById('btn2')
