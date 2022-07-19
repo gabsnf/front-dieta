@@ -1,3 +1,7 @@
+let postUserCard = document.getElementById("select")
+
+
+
 async function postUser() {
 
   
@@ -24,3 +28,24 @@ async function postUser() {
 
   let btn2 = document.getElementById('btn2')
   btn2.addEventListener("click", postUser);
+
+
+  // async function card() {
+  //   console.log("ola")
+  //     const resultado = await fetch("http://localhost:2222/getCardapio", {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
+  
+  //     let cardapiojson = await resultado.json()
+  //     for(let i = 0; i < cardapiojson.length; i++){
+  //       postUserCard.innerHTML += `
+  //       <option value=''></option>
+  //       <option value='${cardapiojson[i].name}'>${cardapiojson[i].name}
+  //       `
+  //     }
+  // }
+
+  // card()

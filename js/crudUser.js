@@ -15,7 +15,6 @@ let butCard = document.getElementById("butCard");
 let cardapio = document.getElementById("inputUp");
 let peso = document.getElementById("inputDown");
 
-
 console.log(window);
 
 
@@ -181,3 +180,6 @@ async function deleteUser(e) {
 }
 
 btnDelete.addEventListener("click", deleteUser);
+
+
+
